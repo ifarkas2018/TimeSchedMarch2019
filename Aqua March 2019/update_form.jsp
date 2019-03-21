@@ -1,21 +1,21 @@
 <%-- 
-    Document   : add_form.jsp
-    Created on : 08-Nov-2018, 13:02:11
+    Document   : update_form
+    Created on : 13-Mar-2019, 11:36:48
     Author     : user
 --%>
-<!-- add_form.jsp - adds the form on the page Add Book -->
+
+<!-- update_form.jsp - adds the form to the page Update Book -->
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Add Page</title>
+        <title>Update Page</title>
         <!-- internal style sheet -->
         <style>
             .text_color {
                 color:red; /* red text color */
             }
-
         </style>
     </head>
     
@@ -39,29 +39,26 @@
                             <div class="col">
                                 &nbsp; &nbsp;
                                 <br/>
-                                <h3>Add a Book</h3>
+                                <h3>Update a Book</h3>
                                 <br/> 
-                                <!-- after clicking on the button addDB.jsp is shown -->
-                                <form id="add_book" action="addDB.jsp" method="post">
+                                <!-- after clicking on the button updateDB.jsp is shown -->
+                                <form id="update_book" action="updateDB.jsp" method="post">
                                     <!-- creating the input element for the title -->
                                     <div class="form-group">
                                         <label for="labtitle">Title:</label> <!-- title label -->
-                                        <!-- filling in the title is required -->
-                                        <input type="text" class="form-control form-control-sm" name="title" id="title" required> 
-                                        <label class="text_color">* Required Field</label>
+                                        <input type="text" class="form-control form-control-sm" name="title" id="title"> <!-- title input field -->
                                     </div>
                                         
                                     <!-- creating the input element for the author -->
                                     <div class="form-group">
                                         <label for="labauthor">Author's Name:</label> <!-- author's name label -->
-                                        <!-- filling in the author is required -->
-                                        <input type="text" class="form-control form-control-sm" name="author" id="author" required> 
-                                        <label class="text_color">* Required Field</label>
+                                        <input type="text" class="form-control form-control-sm" name="author" id="author"> <!-- author input field -->
                                     </div>
                 
                                     <!-- creating the input element for the ISBN -->
                                     <div class="form-group">
                                         <label for="labisbn">ISBN:</label> <!-- ISBN label -->
+                                        <!-- isbn input field : up to 13 characters can be entered -->
                                         <input type="text" class="form-control form-control-sm" maxlength="13" name="isbn" id="isbn"> 
                                     </div>
                                         
@@ -101,8 +98,7 @@
                                     <div class="form-group">
                                         <label for="labpubl">Publisher</label> <!-- publisher label -->
                                         <!-- filling in the publisher is required -->
-                                        <input type="text" class="form-control form-control-sm" name="publisher" id="publisher" required> 
-                                        <label class="text_color">* Required Field</label>
+                                        <input type="text" class="form-control form-control-sm" name="publisher" id="publisher"> 
                                     </div>
                                         
                                     <!-- creating the input element for the city of the publisher -->
@@ -111,7 +107,7 @@
                                         <input type="text" class="form-control form-control-sm" name="publ_city" id="publ_city"> 
                                     </div>
                                         
-                                    <!-- creating the input element for year the book got published -->
+                                    <!-- creating the input element for year the book was published -->
                                     <div class="form-group">
                                         <label for="labpublyr">Publication Year</label> <!-- the label the book got published -->
                                         <input type="text" class="form-control form-control-sm" name="yrpublished" id="yrpublished"> 
@@ -126,17 +122,12 @@
                                     </div>
                                         
                                     <!-- adding the Search button to the form; btn-sm is used for smaller ( narrower ) size of the control -->
-                                    <button type="submit" id="btnSubmit" class="btn btn-info btn-sm">Add</button>
+                                    <button type="submit" id="btnSubmit" class="btn btn-info btn-sm">Update</button>
+                                    
                                     <!-- adding a new container -->
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col">
-                                                &nbsp; &nbsp; <!-- adding some empty space -->
-                                            </div>
-                                        </div>    
-                                    </div>
-
-                                    <!-- adding a new container -->
+                                            <div class="col"
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
@@ -158,6 +149,7 @@
                 &nbsp; &nbsp;
             </div>
         </div> 
+    </div>
+             
     </body>
 </html>
-

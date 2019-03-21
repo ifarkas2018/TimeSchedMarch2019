@@ -86,9 +86,18 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="add_page.jsp">Add</a> <!-- a link on the navbar -->
+                                </li
+                                <li class="nav-item">
+                                    <a class="nav-link" href="update_prev.jsp">Update</a> <!-- a link on the navbar -->
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="search_page.jsp">Search</a> <!-- a link on the navbar -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="validation_page.jsp">Validation</a> <!-- a link on the navbar -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="test.jsp">Test</a> <!-- a link on the navbar -->
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">About</a> <!-- a link on the navbar -->
